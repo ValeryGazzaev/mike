@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 100%;
+	min-width: 320px;
+}
+
+.wrapper {
+	max-width: 1170px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.title {
+	font-family: 'Varela', sans-serif; 
+	font-size: 32px;
+	line-height: 38px;
+	letter-spacing: -1.6px;
+	color: #196fc0;
+}
+
+.subtitle {
+	font-family: 'Varela', sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: 3.2px; 
+	color: #666666;
+}
+
+.blue {
+	color: #196fc0;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	line-height: 22px;
+	font-weight: 300;
+	color: #000;
+}
