@@ -34,6 +34,10 @@
 	color: #196fc0;
 }
 
+.lowecase {
+	text-transform: lowercase;
+}
+
 a {
 	text-decoration: none;
 }
