@@ -1,0 +1,42 @@
+.welcome {
+	position: relative;
+	padding: 88px 0;
+}
+
+.welcome-top {
+	text-align: center;
+}
+
+.welcome-top .subtitle {
+	max-width: 310px;
+}
+
+.welcome-wrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.welcome .blocks {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.welcome .blocks .text-blocks {
+	max-width: 280px;
+}
+
+.welcome .blocks .left {
+	text-align: right;
+}
+
+.welcome .blocks .right {
+	text-align: left;
+}
+
