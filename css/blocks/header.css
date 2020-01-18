@@ -1,6 +1,5 @@
 .header {
 	position: relative;
-	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center;
 	background-image: url('../../img/h-photo.jpg');
@@ -12,13 +11,14 @@
 }
 
 .header-logo {
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
 	display: flex;
 	-ms-align-items: center;
-	align-items: center;
+	-webkit-box-align: center;
+	        align-items: center;
 	padding-top: 165px;
 }
 
@@ -26,7 +26,6 @@
 	position: relative;
 	width: 38px;
 	height: 38px;
-	-webkit-background-size: cover;
 	background-size: cover;
 	background-image: url('../../img/mike-apple.png');
 }
@@ -35,7 +34,8 @@
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	font-size: 14px;
 }	
 
@@ -52,7 +52,8 @@
 	content: '';
 	top: 50%;
 	right: 7px;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
 	border: 5px solid #196fc0;
 	border-left-width: 0;
 	border-top-color: transparent;
@@ -76,7 +77,8 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	text-align: center;
 }
 
@@ -134,19 +136,22 @@
 
 .header-bottom {
 	position: relative;
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(25.68%, #004b91), color-stop(25.68%, #196fc0), to(#196fc0));
 	background-image: linear-gradient(to right, #004b91 25.68%, #196fc0 25.68%, #196fc0);
 }
 
 .header-bottom-wrap {
 	height: 65px;
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
 	-ms-align-items: center;
-	align-items: center;
+	-webkit-box-align: center;
+	        align-items: center;
 }
 
 .header-bottom .header-logo {
@@ -155,7 +160,8 @@
 
 .header-bottom .header-logo p::after {
 	right: -8px;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
 	border: 5px solid #fff;
 	border-left-width: 0;
 	border-top-color: transparent;
@@ -164,12 +170,13 @@
 
 .header-nav {
 	flex-basis: 660px;
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
 }
 
 .header-bottom input {
@@ -191,7 +198,8 @@
 	width: 100%;
 	height: 4px;
 	top: 50%;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
 	background-color: #fff;
 }
 
@@ -201,7 +209,7 @@
 	text-transform: uppercase;
 	color: #fff;
 	font-weight: 600;
-	font-size: 13px
+	font-size: 13px;
 	line-height: 15px;
 	letter-spacing: -0.26px;
 }
@@ -216,6 +224,7 @@
 	background-color: #fff;
 	opacity: 0;
 	visibility: hidden;
+	-webkit-transition: all 0.2s ease;
 	transition: all 0.2s ease;
 }
 
@@ -242,16 +251,17 @@
 		position: absolute;
 		top: -220px;
 		right: 0;
-		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
-		-ms-flex-direction: column;
 		-o-flex-direction: column;
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		        flex-direction: column;
 		width: 150px;
 		opacity: 1;
 		border-radius: 5px 0 0 0;
 		visibility: visible;
 		background-color: #196fc0;
+		-webkit-transition: all 0.2s ease;
 		transition: all 0.2s ease;
 	}
 	#header-nav-btn:checked ~ .header-nav {
@@ -284,7 +294,8 @@
 		position: relative;
 		top: 30px;
 		left: 50%;
-		transform: translate(-50%, 0);
+		-webkit-transform: translate(-50%, 0);
+		        transform: translate(-50%, 0);
 	}
 }
 

@@ -1,6 +1,7 @@
 .welcome {
 	position: relative;
-	padding: 88px 0;
+	padding: 88px 0 90px;
+	color: #000;
 }
 
 .welcome-top {
@@ -12,24 +13,50 @@
 }
 
 .welcome-wrap {
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	margin-top: 64px;
 }
 
 .welcome .blocks {
-	display: -webkit-flex;
+	position: relative;
+	width: 370px;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
 	display: flex;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
+	z-index: 10;
+}
+
+.welcome .first-block {
+	margin: 30px 0 80px;
 }
 
 .welcome .blocks .text-blocks {
 	max-width: 280px;
+}
+
+.welcome .blocks .text-blocks p:nth-child(1) {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 19px;
+	letter-spacing: -0.48px;
+	margin-bottom: 14px;
+}
+
+.welcome .blocks .text-blocks p:nth-child(2) {
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 18px;
+	letter-spacing: -0.48px;
 }
 
 .welcome .blocks .left {
@@ -40,3 +67,101 @@
 	text-align: left;
 }
 
+.welcome .blocks .symbol {
+	position: relative;
+	display: block;
+	width: 70px;
+	height: 70px;
+	background-position: center;
+	background-image: url('../../img/rhombus.png');
+	-webkit-filter: drop-shadow(0 5px #eee);
+	        filter: drop-shadow(0 5px #eee);
+}
+
+.welcome .blocks .symbol i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	font-size: 20px;
+	line-height: 70px;
+}
+
+.welcome-middle {
+	position: relative;
+}
+
+.welcome-middle::before,
+.welcome-middle::after {
+	position: absolute;
+	content: "";
+	width: 50px;
+	top: 48%;
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	height: 1px;
+	left: -107px;
+	background-color: #cccccc;
+}
+
+.welcome-middle::after {
+	left: auto;
+	right: -107px;
+}
+
+
+@media (max-width: 1050px) {
+	.welcome-middle {
+		position:absolute;
+		opacity: 0.2;
+	}
+}
+
+@media (max-width: 878px) {
+	.welcome-wrap {
+		-moz-flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		        flex-direction: column;
+		margin-top: 0;
+	}
+	.welcome-middle {
+		display: none;
+	}
+	.welcome .blocks {
+		position: relative;
+		width: 100%;
+		-moz-flex-direction: column-reverse;
+		-o-flex-direction: column-reverse;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		        flex-direction: column-reverse;
+	}
+	.welcome-right .blocks {
+		-moz-flex-direction: column;
+		-o-flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		        flex-direction: column;
+	}
+	.welcome .blocks .left {
+		text-align: center;
+	}
+	.welcome .blocks .right {
+		text-align: center;
+	}
+	.welcome .blocks .symbol {
+		margin: 0 auto 30px;
+	}
+	.welcome .blocks .text-blocks {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.welcome .blocks {
+		margin-top: 30px;
+	}
+	.welcome .first-block {
+		margin-bottom: 0;
+	}
+}
