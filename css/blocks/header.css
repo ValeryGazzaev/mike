@@ -210,7 +210,6 @@
 	color: #fff;
 	font-weight: 600;
 	font-size: 13px;
-	line-height: 15px;
 	letter-spacing: -0.26px;
 }
 
@@ -273,7 +272,6 @@
 		display: none;
 	}
 	.header-nav a {
-		line-height: 20px;
 		text-indent: 20px;
 	}
 	.header-nav a:hover {

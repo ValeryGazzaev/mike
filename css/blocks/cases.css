@@ -1,7 +1,6 @@
 .cases {
 	background-color: #1b1b1b;
 	background-position: center;
-	-webkit-background-size: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: url('../../img/c-bg.jpg');
@@ -34,6 +33,7 @@
   line-height: 54px;
   background-color: #196fc0;
   color: #fff;
+  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
