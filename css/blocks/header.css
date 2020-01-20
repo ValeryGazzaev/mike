@@ -257,6 +257,7 @@
 		-webkit-box-direction: normal;
 		        flex-direction: column;
 		width: 150px;
+		height: 220px;
 		opacity: 1;
 		border-radius: 5px 0 0 0;
 		visibility: visible;
@@ -272,6 +273,7 @@
 		display: none;
 	}
 	.header-nav a {
+		line-height: 20px;
 		text-indent: 20px;
 	}
 	.header-nav a:hover {
