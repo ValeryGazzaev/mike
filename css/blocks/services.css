@@ -1,0 +1,65 @@
+.services {
+	padding: 80px 0 60px;
+}
+
+.services-bottom .subtitle {
+	max-width: 450px;
+	text-align: center;
+}
+
+.services-wrap {
+	max-width: 1030px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.services-wrap .blocks .symbol {
+	position: relative;
+	display: block;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 130px;
+	height: 130px;
+	background-position: center;
+	background-image: url('../../img/rhombus-c.png');
+	-webkit-filter: drop-shadow(0 5px #eee);
+	filter: drop-shadow(0 5px #eee);
+	margin-bottom: 45px;
+}
+
+.services-wrap .blocks .symbol i {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+	line-height: 48px;
+}
+
+.services-wrap .blocks .symbol p {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-family: 'Varela', sans-serif;
+	font-size: 28px;
+	line-height: 38px;
+}
+
+.services-wrap .blocks > p:nth-child(2) {
+	font-family: 'Varela', sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+}
+
