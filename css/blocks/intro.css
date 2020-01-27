@@ -1,0 +1,193 @@
+.intro {
+	background-color: #f6f6f6;
+	padding: 70px 0 74px;
+}
+
+.intro-wrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.intro-left {
+	flex-basis: 44.8%;
+	margin-right: 76px;
+}
+
+.vimeo-wrap {
+	width: 100%;
+}
+
+.intro-left iframe {
+	position: relative;
+	width: 100%;
+	height: 300px;
+}
+
+.intro-left p:last-child {
+	font-weight: 300;
+	margin-top: 10px;
+}
+
+.intro-right {
+	flex-basis: calc(100% - 525px - 76px);
+	margin-right: 31px;
+}
+
+.intro-blocks .first {
+	position: relative;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 20px;
+	letter-spacing: -0.24px;
+	margin-bottom: 55px;
+}
+
+.intro-blocks .first::after {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: -15px;
+	width: 40px;
+	height: 1px;
+	background-color: #bbbbbb;
+}
+
+.right-skills p {
+	position: relative;
+	text-transform: uppercase;
+	font-family: 'Varela', sans-serif;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 16px;
+	margin-bottom: 8px;
+}
+
+/* percentage */
+.right-skills p span {
+	position: absolute;
+	top: -5px;
+	left: 82.5%;
+}
+
+.right-skills p .percent-2 {
+	left: 73.6%;
+}
+
+.right-skills p .percent-3 {
+	left: 90%;
+}
+
+.right-skills p .percent-4 {
+	left: 69.7%;
+}
+
+.right-skills p .percent-5 {
+	left: 75.7%;
+}
+
+/* grey line */
+.right-skills .line {
+	position: relative;
+	width: 100%;
+	height: 10px;
+	background-color: #555555;
+	margin-bottom: 27.5px;
+} 
+
+/* blue line */
+.right-skills .line::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: #196fc0;
+}
+
+.right-skills .line::before {
+	position: absolute;
+	content: "";
+	left: 81.6%;
+	top: -10px;
+	border: 15px solid #196fc0;
+	border-top-width: 0;
+	border-bottom-width: 20px;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	filter: drop-shadow(5px 0 0 #f6f6f6);
+	z-index: 10;
+}
+
+
+.right-skills .line-1::after {
+	width: 85%;
+}
+.right-skills .line-2::after {
+	width: 75%;
+}
+.right-skills .line-3::after {
+	width: 91%;
+}
+.right-skills .line-4::after {
+	width: 72%;
+}
+.right-skills .line-5::after {
+	width: 78%;
+}
+
+.right-skills .line-2::before {
+	left: 72.6%;
+}
+
+.right-skills .line-3::before {
+	left: 89%;
+}
+
+.right-skills .line-4::before {
+	left: 69%;
+}
+
+.right-skills .line-5::before {
+	left: 74.6%;
+}
+
+@media (max-width: 1020px) {
+	.intro-wrap {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.intro-left {
+		flex-basis: auto;
+		margin-right: 0;
+		margin-bottom: 30px;	
+		text-align: center;
+	}
+	.intro-blocks .first {
+
+		width: 178px;
+		left: 50%;
+		transform: translateX(-50%);		
+	}
+	.intro-blocks .first::after {
+		left: 50%;
+		transform: translateX(-50%);		
+	}
+	.intro-right .first {
+		width: 125px;
+	}
+	.intro-left iframe {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.intro-right {
+		flex-basis: 100%;
+		margin-right: 0;
+	}
+}
