@@ -51,6 +51,14 @@
 	left: 0;
 }
 
+.p-title {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	color: #000;
+}
+
 .blue {
 	color: #196fc0;
 }
