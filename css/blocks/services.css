@@ -16,7 +16,7 @@
 	display: flex;
 	justify-content: space-around;
 	text-align: center;
-	margin-bottom: 100px;
+	margin-bottom: 101px;
 }
 
 .services-wrap .blocks .symbol {
@@ -31,7 +31,13 @@
 	background-image: url('../../img/rhombus-c.png');
 	-webkit-filter: drop-shadow(0 5px #eee);
 	filter: drop-shadow(0 5px #eee);
-	margin-bottom: 45px;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	margin-bottom: 29px;
+}
+
+.services-wrap .blocks:hover .symbol {
+	background-image: url('../../img/rhombus-c-blue.png');
 }
 
 .services-wrap .blocks .symbol i {
@@ -40,8 +46,14 @@
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
 	font-size: 20px;
 	line-height: 48px;
+}
+
+.services-wrap .blocks:hover .symbol i {
+	color: #fff;
 }
 
 .services-wrap .blocks .symbol p {
@@ -53,6 +65,12 @@
 	font-family: 'Varela', sans-serif;
 	font-size: 28px;
 	line-height: 38px;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.services-wrap .blocks:hover .symbol p {
+	color: #fff;
 }
 
 .services-wrap .blocks > p:nth-child(2) {
@@ -61,5 +79,27 @@
 	font-weight: 600;
 	font-size: 12px;
 	line-height: 16px;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
 }
 
+.services-wrap .blocks:hover > p:nth-child(2) {
+	color:  #196fc0;
+}
+
+@media (max-width: 775px) {
+	.services-wrap {
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 465px) {
+.services	.subtitle::before,
+.services .subtitle::after {
+	display: none;
+	}
+}
