@@ -1,3 +1,172 @@
 .reviews {
 	background-color: #eeeeee;
+	padding: 150px 0 20px;
+}
+
+.reviews-slider {
+	position: relative;
+	width: 1170px;
+}
+
+.reviews-controls {
+	position: relative;
+}
+
+.reviews-controls-arrows {
+	position: absolute;
+	width: 75px;
+}
+
+/* Arrows */
+
+/* Left arrow */
+#rev-btn-1:checked ~ .reviews-controls .reviews-controls-arrows label:nth-child(5),
+#rev-btn-2:checked ~ .reviews-controls .reviews-controls-arrows label:nth-child(1),
+#rev-btn-3:checked ~ .reviews-controls .reviews-controls-arrows label:nth-child(2),
+#rev-btn-4:checked ~ .reviews-controls .reviews-controls-arrows label:nth-child(3),
+#rev-btn-5:checked ~ .reviews-controls .reviews-controls-arrows label:nth-child(4) {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 30px;
+	height: 30px;
+	background-color: red;
+	background-image: url("../../img/rhombus.png");
+} 
+
+/* Rigth arrow */
+#rev-btn-1:checked ~ .reviews-controls .reviews-controls-arrows label:nth-child(2),
+#rev-btn-2:checked ~ .reviews-controls .reviews-controls-arrows label:nth-child(3),
+#rev-btn-3:checked ~ .reviews-controls .reviews-controls-arrows label:nth-child(4),
+#rev-btn-4:checked ~ .reviews-controls .reviews-controls-arrows label:nth-child(5),
+#rev-btn-5:checked ~ .reviews-controls .reviews-controls-arrows label:nth-child(4) {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 30px;
+	height: 30px;
+	background-color: red;
+	background-image: url("../../img/rhombus.png");
+}
+
+.reviews-controls-btns {
+	position: relative;
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 3px solid #196fc0; 
+}
+
+.reviews-controls-btns label {
+	position: relative;
+	text-align: center;
+	width: 233.5px;
+	height: 162px;
+	background-color: #fff;
+	transition: background-color 0.4s ease;
+}
+
+.reviews-controls-btns label p {
+	position: absolute;
+	width: 140px;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 25px;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 600;
+}
+
+.reviews-controls-btns label .symbol {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70px;
+	height: 70px;
+	background-image: url('../../img/rhombus.png');
+}
+
+.reviews-controls-btns label .symbol i {
+	font-size: 19px;
+	line-height: 70px;
+}
+
+#rev-btn-1:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(1),
+#rev-btn-2:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(2),
+#rev-btn-3:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(3),
+#rev-btn-4:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(4),
+#rev-btn-5:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(5) {
+	background-color: #196fc0;
+}
+
+#rev-btn-1:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(1) p,
+#rev-btn-2:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(2) p,
+#rev-btn-3:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(3) p,
+#rev-btn-4:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(4) p,
+#rev-btn-5:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(5) p {
+	display: none;
+}
+
+#rev-btn-1:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(1)::before,
+#rev-btn-2:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(2)::before,
+#rev-btn-3:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(3)::before,
+#rev-btn-4:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(4)::before,
+#rev-btn-5:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(5)::before {
+	position: absolute;
+	content: "";
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -18px;
+	display: block;
+	border: 18px solid #196fc0;
+	border-bottom-width: 0;
+	border-top-width: 15px;
+	border-right-color: transparent;
+	border-left-color: transparent;
+}
+
+#rev-btn-1:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(1) .symbol,
+#rev-btn-2:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(2) .symbol,
+#rev-btn-3:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(3) .symbol,
+#rev-btn-4:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(4) .symbol,
+#rev-btn-5:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(5) .symbol {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 110px;
+	height: 110px;
+	background-image: url('../../img/rhombus-b.png');
+}
+
+#rev-btn-1:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(1) .symbol,
+#rev-btn-2:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(2) .symbol,
+#rev-btn-3:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(3) .symbol,
+#rev-btn-4:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(4) .symbol,
+#rev-btn-5:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(5) .symbol {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 110px;
+	height: 110px;
+	background-image: url('../../img/rhombus-b.png');
+}
+
+#rev-btn-1:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(1) .symbol i,
+#rev-btn-2:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(2) .symbol i,
+#rev-btn-3:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(3) .symbol i,
+#rev-btn-4:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(4) .symbol i,
+#rev-btn-5:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(5) .symbol i {
+	line-height: 110px;
+	font-size: 45px;
+	color: #196fc0;
 }
