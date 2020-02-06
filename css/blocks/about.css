@@ -40,8 +40,12 @@
 	transition: all 0.4s ease;
 }
 
+.about-wrap .blocks:hover .symbol {
+	background-image: url('../../img/rhombus-b-blue.png');
+}
+
 .about-wrap .blocks:hover .symbol i {
-	color: #196fc0 !important;
+	color: #fff !important;
 }
 
 .about-wrap .blocks p:nth-child(3) {
@@ -96,8 +100,9 @@
 	height: 111px;
 	background-position: center;
 	background-image: url('../../img/rhombus-b.png');
-	-webkit-filter: drop-shadow(0 5px #eee);
 	filter: drop-shadow(0 5px #eee);
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;		
 	margin-bottom: 45px;
 }
 

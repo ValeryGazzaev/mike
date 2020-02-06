@@ -1,0 +1,125 @@
+.rev-slider {
+	background-color: #196fc0;
+	padding: 68px 0 66px;
+	color: #fff;
+}
+
+.rev-slider-wrap {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1170px;
+}
+
+.rev-slider-wrap input {
+	display: none;
+}
+
+.rev-slider-inner {
+	overflow-x: hidden;
+}
+
+.rev-slider-slider {
+	width: 300%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	transition: all 1s ease;
+}
+
+.rev-slider-slider .slides {
+	width: 1170px;
+	text-align: center;
+}
+
+.rev-slider-slider .slides p:nth-child(1) {
+	max-width: 880px;
+	margin: 28px auto 62px;
+	font-size: 14px;
+	line-height: 23px;
+	letter-spacing: -0.28px;
+}
+
+.rev-slider-slider .slides p:nth-child(2) {
+	position: relative;
+	font-family: 'Varela', sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: -0.28px;
+	margin-bottom: 4px;
+}
+
+
+.rev-slider-slider .slides p:nth-child(2)::before {
+	position: absolute;
+	content: "";
+	top: -30px;
+	width: 50px;
+	height: 1px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #fff;
+}
+
+.rev-slider-slider .slides p:nth-child(3) {
+	font-family: 'Varela', sans-serif;
+	text-transform: uppercase;
+	font-size: 10px;
+	line-height: 14px;
+	letter-spacing: -0.28px;
+}
+
+/* controls */
+
+.rev-slider-controls {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	z-index: 10;
+	margin: 0 auto;
+}
+
+/* Left */
+#rv-btn-1:checked ~ .rev-slider-controls label:nth-child(3),
+#rv-btn-2:checked ~ .rev-slider-controls label:nth-child(1),
+#rv-btn-3:checked ~ .rev-slider-controls label:nth-child(2) {
+	position: absolute;
+	left: 0;
+	display: block;
+	width: 35px;
+	height: 35px;
+	background-image: url('../../img/ar-l.png');
+}
+
+/* Right */
+#rv-btn-1:checked ~ .rev-slider-controls label:nth-child(2),
+#rv-btn-2:checked ~ .rev-slider-controls label:nth-child(3),
+#rv-btn-3:checked ~ .rev-slider-controls label:nth-child(1) {
+	position: absolute;
+	right: 0;
+	display: block;
+	width: 35px;
+	height: 35px;
+	background-image: url('../../img/ar-l.png');
+	transform: scaleX(-1);
+}
+
+#rv-btn-1:checked ~ .rev-slider-inner .rev-slider-slider {
+	transform: translateX(0);
+}  
+#rv-btn-2:checked ~ .rev-slider-inner .rev-slider-slider {
+	transform: translateX(-1170px);
+}  
+#rv-btn-3:checked ~ .rev-slider-inner .rev-slider-slider {
+	transform: translateX(-2340px);
+}  
