@@ -246,7 +246,7 @@
 	line-height: 13px;
 	font-weight: 600;
 	color: #999999;
-	margin-top: 63px;
+	margin-top: 64px;
 }
 
 .reviews-slider-slides .slides a::before {
@@ -270,7 +270,7 @@
 .reviews-bottom {
 	position: relative;
 	margin-top: 47px;
-	padding: 89px 0 48px;
+	padding: 42px 0 48px;
 	background-color: #fff;
 }
 
