@@ -123,3 +123,14 @@
 #rv-btn-3:checked ~ .rev-slider-inner .rev-slider-slider {
 	transform: translateX(-2340px);
 }  
+
+@media (max-width: 1185px) {
+	.rev-slider-controls {
+		width: 90vw;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.rev-slider-slider .slides p:nth-child(1) {
+		max-width: 73vw;
+	}
+}
