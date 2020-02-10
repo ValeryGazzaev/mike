@@ -7,7 +7,8 @@
 .rev-slider-wrap {
 	position: relative;
 	left: 50%;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
 	width: 1170px;
 }
 
@@ -21,12 +22,14 @@
 
 .rev-slider-slider {
 	width: 300%;
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
+	-webkit-transition: all 1s ease;
 	transition: all 1s ease;
 }
 
@@ -60,7 +63,8 @@
 	width: 50px;
 	height: 1px;
 	left: 50%;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
 	background-color: #fff;
 }
 
@@ -78,13 +82,15 @@
 	position: absolute;
 	width: 100%;
 	top: 50%;
-	transform: translateY(-50%);
-	display: -webkit-flex;
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
 	z-index: 10;
 	margin: 0 auto;
 }
@@ -111,24 +117,29 @@
 	width: 35px;
 	height: 35px;
 	background-image: url('../../img/ar-l.png');
-	transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	        transform: scaleX(-1);
 }
 
 #rv-btn-1:checked ~ .rev-slider-inner .rev-slider-slider {
-	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	        transform: translateX(0);
 }  
 #rv-btn-2:checked ~ .rev-slider-inner .rev-slider-slider {
-	transform: translateX(-1170px);
+	-webkit-transform: translateX(-1170px);
+	        transform: translateX(-1170px);
 }  
 #rv-btn-3:checked ~ .rev-slider-inner .rev-slider-slider {
-	transform: translateX(-2340px);
+	-webkit-transform: translateX(-2340px);
+	        transform: translateX(-2340px);
 }  
 
 @media (max-width: 1185px) {
 	.rev-slider-controls {
 		width: 90vw;
 		left: 50%;
-		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
 	}
 	.rev-slider-slider .slides p:nth-child(1) {
 		max-width: 73vw;
