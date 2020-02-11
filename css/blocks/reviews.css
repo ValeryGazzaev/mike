@@ -19,15 +19,17 @@
 
 .reviews-controls-arrows {
 	position: absolute;
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
 	top: -79px;
 	left: 50%;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
 	width: 70px;
 	z-index: 10;
 }
@@ -44,7 +46,6 @@
 	left: 0;
 	width: 35px;
 	height: 35px;
-	-webkit-background-size: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-image:  url("../../img/arrows-slider.png");
@@ -61,7 +62,6 @@
 	width: 35px;
 	height: 35px;
 	background-repeat: no-repeat;
-	-webkit-background-size: cover;
 	background-size: cover;
 	background-image:  url("../../img/arrows-slider.png");
 	background-position: -36px 0;
@@ -69,12 +69,13 @@
 
 .reviews-controls-btns {
 	width: 100%;
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
 	border-bottom: 3px solid #196fc0; 
 }
 
@@ -84,6 +85,7 @@
 	width: 233.5px;
 	height: 162px;
 	background-color: #fff;
+	-webkit-transition: background-color 0.4s ease;
 	transition: background-color 0.4s ease;
 }
 
@@ -91,7 +93,8 @@
 	position: absolute;
 	width: 140px;
 	left: 50%;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
 	bottom: 25px;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -103,7 +106,8 @@
 	position: absolute;
 	top: 40%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	width: 70px;
 	height: 70px;
 	background-image: url('../../img/rhombus.png');
@@ -138,7 +142,8 @@
 	position: absolute;
 	content: "";
 	left: 50%;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
 	bottom: -18px;
 	display: block;
 	border: 18px solid #196fc0;
@@ -155,7 +160,8 @@
 #rev-btn-5:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(5) .symbol {
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	width: 110px;
 	height: 110px;
 	background-image: url('../../img/rhombus-b.png');
@@ -168,7 +174,8 @@
 #rev-btn-5:checked ~ .reviews-controls .reviews-controls-btns label:nth-child(5) .symbol {
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	width: 110px;
 	height: 110px;
 	background-image: url('../../img/rhombus-b.png');
@@ -192,37 +199,44 @@
 
 .reviews-slider-slides {
 	width: 500%;
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
+	-webkit-transition: all 1s ease;
 	transition: all 1s ease;
 }
 
 #rev-btn-1:checked ~ .reviews-slider-inner .reviews-slider-slides {
-	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	        transform: translateX(0);
 }
 #rev-btn-2:checked ~ .reviews-slider-inner .reviews-slider-slides {
-	transform: translateX(-1170px);
+	-webkit-transform: translateX(-1170px);
+	        transform: translateX(-1170px);
 } 
 #rev-btn-3:checked ~ .reviews-slider-inner .reviews-slider-slides {
-	transform: translateX(-2340px);
+	-webkit-transform: translateX(-2340px);
+	        transform: translateX(-2340px);
 } 
 #rev-btn-4:checked ~ .reviews-slider-inner .reviews-slider-slides {
-	transform: translateX(-3510px);
+	-webkit-transform: translateX(-3510px);
+	        transform: translateX(-3510px);
 }
 #rev-btn-5:checked ~ .reviews-slider-inner .reviews-slider-slides {
-	transform: translateX(-4680px);
+	-webkit-transform: translateX(-4680px);
+	        transform: translateX(-4680px);
 }
 
 .reviews-slider-slides .slides {
 	width: 1170px;
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
 	display: flex;
 }
 
@@ -287,15 +301,16 @@
 	}
 	.reviews-slider {
 		left: 50%;
-		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
 	}
 	.reviews-slider-slides .slides {
 		position: relative;
-		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
-		-ms-flex-direction: column;
 		-o-flex-direction: column;
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		        flex-direction: column;
 		text-align: center;
 	}
 	.reviews-slider-slides .slides p:nth-child(1) {
@@ -305,7 +320,8 @@
 		position: relative;
 		width: 95vw;
 		left: 50%;
-		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
 
 	}
 	.reviews-controls-arrows {
@@ -313,7 +329,8 @@
 	}
 	.reviews-slider-slides .slides a::before {
 		left: 50%;	
-		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);	
+		        transform: translateX(-50%);
 	}
 	.reviews-slider-slides .slides .slide-left {
 		margin-bottom: 30px;
