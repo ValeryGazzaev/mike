@@ -1,5 +1,5 @@
 .team {
-	padding: 74px 0 110px;
+	padding: 72px 0 110px;
 }
 
 .team .subtitle {
@@ -13,8 +13,14 @@
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	text-align: center;
+	margin-top: 54px;
 }
 
 .team-wrap .blocks {
@@ -144,4 +150,20 @@
 
 .team-social .social-btn:hover i {
 	color: #196fc0;
+}
+
+@media (max-width: 1130px) {
+	.team-wrap {
+		justify-content: center;
+	}
+	.team-wrap .blocks {
+		margin: 20px;
+	}
+}
+
+@media (max-width: 465px) {
+	.team .subtitle::before,
+	.team .subtitle::after {
+		display: none;
+	}
 }

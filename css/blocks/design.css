@@ -1,0 +1,98 @@
+
+.design-wrap {
+	position: relative;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-image: url('../../img/disign-bg.jpg');	
+	padding: 95px 0 93px;
+}
+
+.design-wrap::before {
+	position: absolute;
+	content: '';
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(25, 111, 192, 0.80);
+	z-index: 1;
+}
+
+.design-wrap::after {
+	position: absolute;
+	content: '';
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 30px solid #4187c7;
+	border-bottom-width: 0;
+	border-top-width: 20px;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	z-index: 1;
+}
+
+.design-top {
+	position: relative;
+	max-width: 855px;
+	margin: 0 auto;
+	text-align: center;
+	z-index: 2;
+}
+
+.design-top p {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 54px;
+	line-height: 56px;
+	letter-spacing: -2.7px;
+	color: #fff;
+}
+
+.design-top p:nth-child(3) {
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 30px;
+	letter-spacing: -0.9px;
+	margin-top: 40px;
+}
+
+.design-links {
+	max-width: 370px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin: 60px auto 102px;
+}
+
+.design-links a {
+	display: inline-block;
+	width: 168px;
+	height: 47px;
+	font-family: 'Varela', sans-serif;
+	text-align: center;
+	line-height: 48px;
+	font-weight: 600;
+	border: 1px solid #dddddd;
+	text-transform: uppercase;
+	background-color: #fff;
+	transition: all 0.2s ease;
+	color: #000;
+}
+
+.design-links a:hover {
+	background-color: #196fc0;
+	border: 1px solid #196fc0;
+	transform: scale(1.02);
+	color: #fff;
+}
+
+.design-links a:active {
+transform: scale(0.94);
+color: #696969;
+background-color: #fff;
+border: 1px solid #696969;
+}
