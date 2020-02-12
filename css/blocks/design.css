@@ -2,7 +2,6 @@
 .design-wrap {
 	position: relative;
 	background-position: center;
-	-webkit-background-size: cover;
 	background-size: cover;
 	background-image: url('../../img/disign-bg.jpg');	
 	padding: 95px 0 93px;
@@ -23,7 +22,8 @@
 	content: '';
 	bottom: -20px;
 	left: 50%;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
 	border: 30px solid #4187c7;
 	border-bottom-width: 0;
 	border-top-width: 20px;
@@ -59,12 +59,13 @@
 
 .design-links {
 	max-width: 370px;
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
 	margin: 60px auto 102px;
 }
 
@@ -79,6 +80,7 @@
 	border: 1px solid #dddddd;
 	text-transform: uppercase;
 	background-color: #fff;
+	-webkit-transition: all 0.2s ease;
 	transition: all 0.2s ease;
 	color: #000;
 }
@@ -86,12 +88,14 @@
 .design-links a:hover {
 	background-color: #196fc0;
 	border: 1px solid #196fc0;
-	transform: scale(1.02);
+	-webkit-transform: scale(1.02);
+	        transform: scale(1.02);
 	color: #fff;
 }
 
 .design-links a:active {
-transform: scale(0.94);
+-webkit-transform: scale(0.94);
+        transform: scale(0.94);
 color: #696969;
 background-color: #fff;
 border: 1px solid #696969;
