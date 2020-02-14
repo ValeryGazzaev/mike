@@ -3,6 +3,10 @@
 	padding: 71px 0 186px;
 }
 
+.history-wrap {
+	max-width: 940px;
+}
+
 .history-top {
 	text-align: center;
 }
@@ -33,15 +37,58 @@
 	line-height: 19px;
 	font-weight: 600;
 	font-family: 'Varela', sans-serif;
-	margin: 55px auto 138px;
+	margin: 55px auto 150px;
+}
+
+.history-roadmap {
+	position: relative;
+}
+
+.history-roadmap .road {
+	position: absolute;
+	display: block;
+	top: -24px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 640px;
+	width: 1px;
+	background-color: #dddddd;
+	z-index: 10;
+}
+
+.history-roadmap .road::before {
+	position: absolute;
+	content: "2014";
+	top: -70px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	line-height: 70px;
+	width: 70px;
+	height: 70px;
+	background-image: url('../../img/rhombus.png');
+	filter: drop-shadow(0 5px #eee);
 }
 
 .history-roadmap .blocks {
+	position: relative;
 	width: 100%;
+}
+
+.history-roadmap .blocks::after {
+	position: absolute;
+	content: "";
+	width: 50%;
+	height: 1px;
+	background-color: #dddddd;
 }
 
 .history-roadmap .blocks .inners {
 	max-width: 460px;
+}
+
+.history-roadmap .block-2 {
+	margin-left: 50%;
 }
 
 .history-roadmap .blocks .inner-text-upper,
@@ -75,6 +122,21 @@
 	text-indent: 17px;
 }
 
+.history-roadmap .block-2 .inner-text-upper p:nth-child(1) {
+	position: relative;
+	width: calc(100% - 17.4%);
+	background-color: #555555;
+	text-align: left;
+	text-indent: 17px;
+}
+
+.history-roadmap .block-2 .inner-text-upper p:nth-child(2) {
+	position: relative;
+	width: 17.4%;
+	background-color: #196fc0;
+	text-align: left;
+	text-indent: 17px;
+}
 
 .history-roadmap .blocks .inner-text-upper p:nth-child(2)::after {
 	position: absolute;
@@ -88,6 +150,20 @@
 	border-bottom-color: transparent; 
 	z-index: 10;
 }
+
+.history-roadmap .blocks .inner-text-upper p:nth-child(2)::before {
+	position: absolute;
+	content: "";
+	width: 15px;
+	height: 15px;
+	right: -17px;
+	background-color: #555555;
+	top: 35%;
+	transform: translateY(-50%);
+	transform: rotate(45deg);
+	z-index: 20;
+}
+
 
 .history-roadmap .blocks .inner-text-lower {
 	margin: 24px 0;
