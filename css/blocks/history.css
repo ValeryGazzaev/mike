@@ -1,0 +1,333 @@
+.history {
+	background-color: #f6f6f6;
+	padding: 71px 0 186px;
+}
+
+.history-wrap {
+	max-width: 940px;
+}
+
+.history-top {
+	text-align: center;
+}
+
+.history-top p:nth-child(1) {
+	position: relative;
+	text-transform: capitalize;
+	color: #196fc0;
+	font-size: 30px;
+	line-height: 30px;
+	letter-spacing: 0.9px;
+}
+
+.history-top p:nth-child(1)::after {
+	position: absolute;
+	content: "";
+	bottom: -27px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 50px;
+	height: 1px;
+	background-color: #bbbbbb;
+}
+
+.history-top p:nth-child(2) {
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 19px;
+	font-weight: 600;
+	font-family: 'Varela', sans-serif;
+	margin: 55px auto 150px;
+}
+
+.history-roadmap {
+	position: relative;
+}
+
+.history-roadmap .road {
+	position: absolute;
+	display: block;
+	top: -24px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	height: 664px;
+	width: 1px;
+	background-color: #dddddd;
+	z-index: 10;
+}
+
+.history-roadmap .road::after,
+.history-roadmap .road::before {
+	position: absolute;
+	content: "2014";
+	top: -74px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	text-align: center;
+	line-height: 70px;
+	font-size: 11px;
+	width: 70px;
+	height: 70px;
+	font-weight: 600;
+	background-image: url('../../img/rhombus.png');
+	-webkit-filter: drop-shadow(0 5px #eee);
+	filter: drop-shadow(0 5px #eee);
+}
+
+.history-roadmap .road::after {
+	content: "More";
+	top: auto;
+	text-transform: uppercase;
+	bottom: -67px;
+}
+
+.history-roadmap .blocks {
+	position: relative;
+	width: 100%;
+}
+
+.history-roadmap .blocks::after {
+	position: absolute;
+	content: "";
+	width: 50%;
+	height: 1px;
+	background-color: #dddddd;
+}
+
+.history-roadmap .block-2::after {
+	width: 50.34% !important;
+	left: -10px;
+}
+
+.history-roadmap .blocks .inners {
+	max-width: 460px;
+}
+
+.history-roadmap .block-2 {
+	margin-left: 51.2%;
+}
+
+.history-roadmap .block-2::after {
+	width: 49%;
+}
+
+.history-roadmap .block-2 .inner-text-lower a {
+	width: 100px;
+	height: 100px;
+	background-image: url('../../img/faces/two.jpg');
+}
+
+.history-roadmap .block-2 .inner-text-lower a:nth-child(2) {
+	background-image: url('../../img/faces/man.jpg');
+}
+
+.history-roadmap .block-2 .inner-text-lower a:nth-child(3) {
+	background-image: url('../../img/faces/mike.jpg');
+}
+
+.history-roadmap .block-2 .inner-text-lower a:nth-child(4) {
+	background-image: url('../../img/faces/girl.jpg');
+}
+
+.history-roadmap .blocks .inner-text-upper,
+.history-roadmap .blocks .inner-text-lower {
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+}
+
+.history-roadmap .block-2 .inner-text-lower {
+	justify-content: space-around;
+}
+
+.history-roadmap .blocks .inner-text-upper p {
+	display: inline-block;
+	text-transform: uppercase;
+	width: 17.4%;
+	height: 50px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 50px;
+	color: #fff;
+	background-color: #196fc0;
+}
+
+.history-roadmap .blocks .inner-text-upper p:nth-child(2) {
+	position: relative;
+	width: calc(100% - 17.4%);
+	background-color: #555555;
+	text-align: left;
+	text-indent: 17px;
+}
+
+.history-roadmap .block-2 .inner-text-upper p:nth-child(1) {
+	position: relative;
+	width: calc(100% - 17.4%);
+	background-color: #555555;
+	text-indent: 145px;
+}
+
+.history-roadmap .block-2 .inner-text-upper p:nth-child(2) {
+	position: relative;
+	width: 17.4%;
+	background-color: #196fc0;
+	text-indent: 11px;
+}
+
+.history-roadmap .blocks .inner-text-upper p:nth-child(2)::after {
+	position: absolute;
+	content: '';
+	right: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	border: 10px solid #f6f6f6;
+	border-left-width: 0;
+	border-top-color: transparent; 
+	border-bottom-color: transparent; 
+	z-index: 10;
+}
+
+.history-roadmap .blocks .inner-text-upper p:nth-child(2)::before {
+	position: absolute;
+	content: "";
+	width: 15px;
+	height: 15px;
+	right: -17px;
+	background-color: #555555;
+	top: 35%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	z-index: 20;
+}
+
+.history-roadmap .block-2 .inner-text-upper p:nth-child(2)::after {
+	position: absolute;
+	content: '';
+	right: auto;
+	left: -380px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	border: 10px solid #f6f6f6;
+	border-right-width: 0;
+	border-top-color: transparent; 
+	border-bottom-color: transparent; 
+	z-index: 10;
+}
+
+.history-roadmap .block-2 .inner-text-upper p:nth-child(2)::before {
+	position: absolute;
+	content: "";
+	width: 15px;
+	height: 15px;
+	right: auto;
+	left: -398px;
+	background-color: #555555;
+	top: 35%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	z-index: 20;
+}
+
+.history-roadmap .blocks .inner-text-lower {
+	margin: 24px 0;
+}
+
+.history-roadmap .blocks .inner-text-lower p {
+	width: 315px;
+	font-size: 12px;
+	line-height: 22px;
+	margin-right: 23px;
+}
+
+
+@media (max-width: 980px) {
+	.history-roadmap .blocks {
+		margin-bottom: 50px;
+		z-index: 11;
+		background-color: #f6f6f6;
+	}
+	.history-roadmap .blocks .inners {
+		max-width: 460px;
+		margin: 20px auto 0;
+	}
+	.history-roadmap .block-2 {
+		margin-left: 0;
+	}
+	.history-roadmap .blocks .inner-text-upper p:nth-child(2)::before,
+	.history-roadmap .blocks .inner-text-upper p:nth-child(2)::after {
+		display: none;
+	}
+	.history-roadmap .blocks::after {
+		position: absolute;
+		content: "";
+		width: 50%;
+		height: 1px;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+		background-color: #dddddd;
+	}
+	.history-roadmap .blocks .inner-text-upper p {
+		height: auto;
+		line-height: 22px;
+	}
+	.history-roadmap .road {
+		height: 580px;
+	}
+	.history {
+		padding: 71px 0 100px;
+	}
+}
+
+@media (max-width: 500px) {
+	.history-roadmap .blocks .inner-text-upper p:nth-child(2) {
+		padding-left: 17px;
+		text-indent: 0;
+	}
+	.history-roadmap .block-2 .inner-text-upper p:nth-child(1) {
+		text-indent: 0;
+		text-align: center;
+		padding-left: 17px;
+	}
+	.history-roadmap .block-2 .inner-text-upper p:nth-child(2) {
+		text-indent: 0 !important;
+
+	}
+	.history-roadmap .blocks .inner-text-lower {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		flex-direction: column;
+	}
+	.history-roadmap .blocks .inner-text-lower p {
+		width: 100%;
+		text-align: center;
+	}
+	.history-roadmap .blocks .inner-text-lower img {
+		display: none;
+	}
+	.history-roadmap .block-2 .inner-text-lower {
+		-moz-flex-direction: row;
+		-o-flex-direction: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		flex-direction: row;
+	}
+	.history-roadmap .road {
+		height: 540px;
+	}
+
+}
