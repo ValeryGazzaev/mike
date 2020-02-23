@@ -3,27 +3,16 @@
 @import url('core.css');
 @import url('blocks/header.css');
 @import url('blocks/welcome.css');
-<<<<<<< HEAD
 @import url('blocks/cases.css');
 @import url('blocks/about.css');
 @import url('blocks/intro.css');
-=======
 @import url('blocks/about.css');
 @import url('blocks/intro.css');
 @import url('blocks/cases.css');
 @import url('blocks/services.css');
-<<<<<<< HEAD
->>>>>>> working
-=======
 @import url('blocks/reviews.css');
 @import url('blocks/rev-slider.css');
-<<<<<<< HEAD
->>>>>>> working
-=======
 @import url('blocks/team.css');
 @import url('blocks/design.css');
-<<<<<<< HEAD
->>>>>>> working
-=======
 @import url('blocks/history.css');
->>>>>>> working
+@import url('blocks/works.css');
