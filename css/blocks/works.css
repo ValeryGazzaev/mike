@@ -1,0 +1,171 @@
+.works {
+	padding: 80px 0 100px;
+}
+
+.works-top {
+	margin-bottom: 66px;
+}
+
+.works .subtitle {
+	max-width: 450px;
+	text-align: center;
+}
+
+.works-slider {
+	position: relative;
+	width: 100%;
+}
+
+.works-slider-inner {
+	overflow-x: hidden;
+}
+
+.works-slider input {
+	display: none;
+}
+
+.works-slider-slides {
+	width: 500%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	transition: all 1s ease;
+}
+
+.works-slider-slides .slides {
+	width: 1170px;
+}
+
+.works-slider-slides .slides .slides-gallery {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(4, 293px);
+	grid-template-rows: repeat(2, 250px); 
+}
+
+.works-slider-slides .slides .image {
+	position: relative;
+	width: 293px;
+	height: 250px;
+	background-size: cover;
+	background-image: url('../../img/Gallery/visit card.jpg');
+}
+.works-slider-slides .slides .image-2 {
+	background-image: url('../../img/Gallery/cups.jpg');
+}
+.works-slider-slides .slides .image-3 {
+	background-image: url('../../img/Gallery/docs.jpg');
+}
+.works-slider-slides .slides .image-4 {
+	background-image: url('../../img/Gallery/stamp.jpg');
+}
+.works-slider-slides .slides .image-5 {
+	background-image: url('../../img/Gallery/all.jpg');
+}
+.works-slider-slides .slides .image-6 {
+	-webkit-background-size: ;
+	background-size: ;
+	background-image: url('../../img/Gallery/visit card.jpg');
+}
+.works-slider-slides .slides .image-7 {
+	background-image: url('../../img/Gallery/countries.jpg');
+}
+.works-slider-slides .slides .image-8 {
+	background-image: url('../../img/Gallery/cups.jpg');
+}
+
+.works-slider .slides .image-inner {
+	position: relative;
+	display: none;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+.works-slider .slides .image-inner .image-inner-text {
+	position: absolute;
+	bottom: 0;
+}
+
+.works-slider-slides .slides .image:hover .image-inner {
+	display: block;
+}
+
+.works-slider-controls {
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+	border: 1px solid #eee;
+	border-bottom: 3px solid #196fc0;
+	margin-bottom: 40px;
+}
+
+.works-slider-controls .sortby-btn,
+.works-slider-controls label {
+	position: relative;
+	width: 130px;
+	height: 42px;
+	vertical-align: middle;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Varela', sans-serif;
+	font-size: 11px;
+	line-height: 42px;
+	margin-left: -1px;
+	border-left: 1px solid #eeeeee;	
+	border-right: 1px solid #eeeeee;
+}
+
+.works-slider-controls .sortby-btn {
+	margin-left: auto;
+	margin-right: -1px;
+}
+
+#works-btn-1:checked ~ .works-slider-controls label:nth-child(1), 
+#works-btn-2:checked ~ .works-slider-controls label:nth-child(2),
+#works-btn-3:checked ~ .works-slider-controls label:nth-child(3),
+#works-btn-4:checked ~ .works-slider-controls label:nth-child(4),
+#works-btn-5:checked ~ .works-slider-controls label:nth-child(5) {
+	background-color: #196fc0;
+	color: #fff;
+}
+
+#works-btn-1:checked ~ .works-slider-controls label:nth-child(1)::after, 
+#works-btn-2:checked ~ .works-slider-controls label:nth-child(2)::after,
+#works-btn-3:checked ~ .works-slider-controls label:nth-child(3)::after,
+#works-btn-4:checked ~ .works-slider-controls label:nth-child(4)::after,
+#works-btn-5:checked ~ .works-slider-controls label:nth-child(5)::after {
+	position: absolute;
+	content: "";
+	bottom: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 10px solid #196fc0;
+	border-bottom-width: 0;
+	border-top-width: 8px;
+	border-left-color: transparent;	
+	border-right-color: transparent; 
+}
+
+#works-btn-1:checked ~ .works-slider-inner .works-slider-slides {
+	transform: translateX(0);
+} 
+#works-btn-2:checked ~ .works-slider-inner .works-slider-slides {
+	transform: translateX(-1170px);
+}
+#works-btn-3:checked ~ .works-slider-inner .works-slider-slides {
+	transform: translateX(-2340px);
+}
+#works-btn-4:checked ~ .works-slider-inner .works-slider-slides {
+	transform: translateX(-3510px);
+}
+#works-btn-5:checked ~ .works-slider-inner .works-slider-slides {
+	transform: translateX(-4680px);
+}
