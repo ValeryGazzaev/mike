@@ -577,11 +577,14 @@
 						<label for="works-btn-4">Phtography</label>
 						<label for="works-btn-5">Mobile dev</label>
 						<form class="sortby-btn" action="echo" method="post">
+							<div class="arrow-down"></div>
 							<select>
+								<option value="" hidden disabled selected>Sort by</option>
 								<option value="name">Name</option>
 								<option value="date">Date</option>
 								<option value="shuffle">Shuffle</option>
 							</select>
+
 						</form>
 					</div>
 					<div class="works-slider-inner">
@@ -591,7 +594,7 @@
 								<div class="slides-gallery">
 									<div class="image image-1">
 										<div class="image-inner">
-											<i class="far fa-plus-square"></i>
+											<div><i class="far fa-plus-square"></i></div>
 											<div class="image-inner-text">
 												<p>Marketing guiness</p>
 												<p>Branding and identity</p>
