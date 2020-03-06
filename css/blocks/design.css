@@ -23,7 +23,7 @@
 	bottom: -20px;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
-	        transform: translateX(-50%);
+	transform: translateX(-50%);
 	border: 30px solid #4187c7;
 	border-bottom-width: 0;
 	border-top-width: 20px;
@@ -65,7 +65,7 @@
 	display: -webkit-box;
 	display: flex;
 	-webkit-box-pack: justify;
-	        justify-content: space-between;
+	justify-content: space-between;
 	margin: 60px auto 102px;
 }
 
@@ -89,14 +89,14 @@
 	background-color: #196fc0;
 	border: 1px solid #196fc0;
 	-webkit-transform: scale(1.02);
-	        transform: scale(1.02);
+	transform: scale(1.02);
 	color: #fff;
 }
 
 .design-links a:active {
--webkit-transform: scale(0.94);
-        transform: scale(0.94);
-color: #696969;
-background-color: #fff;
-border: 1px solid #696969;
+	-webkit-transform: scale(0.94);
+	transform: scale(0.94);
+	color: #696969;
+	background-color: #fff;
+	border: 1px solid #696969;
 }

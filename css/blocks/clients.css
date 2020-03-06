@@ -1,5 +1,5 @@
 .clients {
-	padding: 75px 0 80px;
+	padding: 74px 0 80px;
 	text-align: center;
 }
 
@@ -16,9 +16,31 @@
 	content: '';
 	width: 50px;
 	height: 1px;
-	bottom: 0;
+	bottom: -27px;
 	left: 50%;
 	transform: translateX(-50%);
 	background-color: #bbbbbb;
 }
 
+.clients-wrap p:last-child {
+	color: #868686;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.clients-wrap .clients-gallery {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin: 77px auto 43px;
+}
+
+.clients-wrap .clients-gallery .image {
+	display: block;
+	width: 190px;
+	height: 70px;
+	background-color: #f6f6f6;
+}

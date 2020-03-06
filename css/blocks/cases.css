@@ -28,13 +28,13 @@
 	display: inline-block;
 	text-transform: uppercase;
 	font-family: 'Varela', sans-serif; 
-  width: 200px;
-  height: 52px;
-  line-height: 54px;
-  background-color: #196fc0;
-  color: #fff;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+	width: 200px;
+	height: 52px;
+	line-height: 54px;
+	background-color: #196fc0;
+	color: #fff;
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
 }
 
 .cases-wrap a:hover {
