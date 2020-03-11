@@ -246,6 +246,7 @@
 	background-color: #fff;
 	opacity: 0;
 	visibility: hidden;
+	-webkit-transition: all 0.2s ease;
 	transition: all 0.2s ease;
 }
 
@@ -297,6 +298,9 @@
 	}
 	.header-nav a:nth-child(1) {
 		border-radius: 5px 0 0 0;
+	}
+	.header-nav a::before {	
+		display: none;
 	}
 }
 
