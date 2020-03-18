@@ -1,0 +1,68 @@
+.footer-social {
+	position: relative;
+	background-color: #196fc0;
+	border-bottom: 5px solid #000;
+}
+
+.footer-social .social-inner {
+	position: relative;
+	bottom: -5px;
+	max-width: 552px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	border-bottom: 5px solid #fff;
+	padding: 26px 0 25px;
+}
+
+.footer-social .social-inner a {
+	position: relative;
+	display: block;
+	width: 70px;
+	height: 70px;
+	background-image: url('../../img/rhomb-t.png');
+	transition: all 0.2s ease;
+	color: #fff;
+}
+
+.footer-social .social-inner a:hover {
+	background-image: url('../../img/rhombus.png');
+}
+
+.footer-social .social-inner a i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 19px;
+}
+
+.footer-social .social-inner a:hover i {
+	color: #196fc0;
+}
+
+.footer-nav {
+	max-width: 645px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	text-transform: uppercase;
+	padding: 76px 0 56px;
+}
+
+.footer-nav a {
+	color: #666666;
+	font-weight: 600;
+}
+
+.footer-nav a:hover {
+	color: #196fc0;
+}
