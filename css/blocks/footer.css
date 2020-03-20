@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 .footer-social {
 	position: relative;
 	background-color: #196fc0;
@@ -8,15 +10,18 @@
 	position: relative;
 	bottom: -5px;
 	max-width: 552px;
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	margin: 0 auto;
 	border-bottom: 5px solid #fff;
-	padding: 26px 0 25px;
+	padding: 20px 0 25px;
 }
 
 .footer-social .social-inner a {
@@ -25,6 +30,8 @@
 	width: 70px;
 	height: 70px;
 	background-image: url('../../img/rhomb-t.png');
+	-webkit-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
 	transition: all 0.2s ease;
 	color: #fff;
 }
@@ -37,7 +44,9 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	font-size: 19px;
 }
 
@@ -47,15 +56,18 @@
 
 .footer-nav {
 	max-width: 645px;
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	margin: 0 auto;
 	text-transform: uppercase;
-	padding: 76px 0 56px;
+	padding: 71px 0 75px;
 }
 
 .footer-nav a {
@@ -65,4 +77,69 @@
 
 .footer-nav a:hover {
 	color: #196fc0;
+}
+
+.footer-wrap .slide-up {
+	position: relative;
+}
+
+.footer-wrap .hr {
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: rgba(221, 221, 221, 1);
+}
+
+.footer-wrap .arrow-rhomb {
+	position: relative;
+	display: block;
+	top: -21px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	width: 30px;
+	height: 30px;
+	background-color: #000;
+	-webkit-transform-origin: 0 0;
+	    -ms-transform-origin: 0 0;
+	        transform-origin: 0 0;
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+
+.footer-wrap .arrow-rhomb .arrows-up {
+	position: absolute;
+	left: 32%;
+	top: 32%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	width: 17px;
+	height: 17px;
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+	background-image: url('../../img/arrow-up.png');
+}
+
+.footer-wrap .copyright {
+	position: relative;
+	display: inline-block;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	font-weight: 600;
+	color: #666666;	
+	padding: 22px 0 141px;
+}
+
+.footer-wrap .copyright:hover {
+	text-decoration: underline;
+}
+
+.footer-wrap .copyright:active {
+	color: #eee;
 }
