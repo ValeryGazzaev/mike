@@ -1,5 +1,3 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
 .footer-social {
 	position: relative;
 	background-color: #196fc0;
@@ -17,8 +15,8 @@
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	margin: 0 auto;
 	border-bottom: 5px solid #fff;
 	padding: 20px 0 25px;
@@ -45,8 +43,8 @@
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	font-size: 19px;
 }
 
@@ -63,11 +61,11 @@
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	margin: 0 auto;
 	text-transform: uppercase;
-	padding: 71px 0 75px;
+	padding: 71px 20px 75px;
 }
 
 .footer-nav a {
@@ -96,17 +94,17 @@
 	top: -21px;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
-	    -ms-transform: translateX(-50%);
-	        transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
 	width: 30px;
 	height: 30px;
 	background-color: #000;
 	-webkit-transform-origin: 0 0;
-	    -ms-transform-origin: 0 0;
-	        transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	transform-origin: 0 0;
 	-webkit-transform: rotate(45deg);
-	    -ms-transform: rotate(45deg);
-	        transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 .footer-wrap .arrow-rhomb .arrows-up {
@@ -114,13 +112,13 @@
 	left: 32%;
 	top: 32%;
 	-webkit-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	width: 17px;
 	height: 17px;
 	-webkit-transform: rotate(-45deg);
-	    -ms-transform: rotate(-45deg);
-	        transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
 	background-image: url('../../img/arrow-up.png');
 }
 
@@ -129,8 +127,8 @@
 	display: inline-block;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
-	    -ms-transform: translateX(-50%);
-	        transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
 	font-weight: 600;
 	color: #666666;	
 	padding: 22px 0 141px;
@@ -142,4 +140,28 @@
 
 .footer-wrap .copyright:active {
 	color: #eee;
+}
+
+@media (max-width: 600px) {
+	.footer-nav {
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	.footer-nav a {
+		width: 70px;
+		height: 36px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 450px) {
+	.footer-social .social-inner {
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
 }
